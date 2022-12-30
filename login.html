@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Input Form</title>
+<style> 
+form{
+margin:20px;
+padding:20px;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:50px;
+}
+
+form>div>input{
+padding:10px;
+margin:10px;
+border-radius:10px;
+width:265px;
+height:68px;
+font-size:30px;
+}
+
+form>div>input:focus{
+
+background-color:black;
+color:yellow;
+
+}
+
+#submit:hover{
+cursor:pointer;
+}
+
+
+</style>
+</head>
+
+<body>
+
+  <form action="https://script.google.com/macros/s/AKfycbz1E2wL6TcrlzMDuhkd1TT23oV3FrFw5zpP9YZHLWgE/dev" method="post">
+<div>
+<input type="datetime-local" id="current-time"  style="display:none;">
+    Item: <br>
+    <input type="text" name="item" placeholder="Enter item name" >
+    <br>
+    Quantity: <br>
+    <input type="text" name="quantity" placeholder="Enter quantity">
+    <br><br>
+    <input onclick="hist()" id="submit" type="submit" value="Submit">
+</div>
+  </form> 
+<script>
+function hist(){
+
+history.back()
+}
+
+</script>
+</body>
+</html>
